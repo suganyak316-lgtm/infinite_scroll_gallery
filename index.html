@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Infinite Scroll Photo Gallery</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Infinite Scroll Photo Gallery</h1>
+
+<input 
+type="text" 
+id="searchInput" 
+placeholder="Search photos..."
+>
+
+</header>
+
+
+<div class="layout">
+
+
+<aside>
+
+<h2>Collections</h2>
+
+<button data-search="nature">Nature</button>
+<button data-search="travel">Travel</button>
+<button data-search="animals">Animals</button>
+<button data-search="food">Food</button>
+<button data-search="technology">Technology</button>
+<button data-search="architecture">Architecture</button>
+
+</aside>
+
+
+
+<main>
+
+
+<div id="gallery"></div>
+
+
+<div id="loader">
+Loading...
+</div>
+
+
+<div id="empty">
+No photos found
+</div>
+
+
+<div id="error">
+
+Failed to load images
+
+<br>
+
+<button id="retry">
+Retry
+</button>
+
+</div>
+
+
+<div id="scroll"></div>
+
+
+</main>
+
+</div>
+
+
+
+<div id="lightbox">
+
+
+<span id="close">×</span>
+
+<img id="bigImage">
+
+
+<div id="details"></div>
+
+
+</div>
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
